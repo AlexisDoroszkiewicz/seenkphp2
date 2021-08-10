@@ -1,0 +1,394 @@
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(./fonts/SF-Pro-Text-Light.otf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(./fonts/SF-Pro-Text-Regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(./fonts/SF-Pro-Text-Medium.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(./fonts/SF-Pro-Text-Bold.otf);
+    font-weight: 700;
+}
+
+:root {
+    --bgColor: #F4F4F4;
+    --headerColor: #303030;
+    --headingsColor: #626262;
+    --abbrColor: #C4C4C4;
+    --cardColor: #4D4D4D;
+    --cardbgColor: #FFFFFF;
+    --lightColor: #818181;
+
+    --mainFont: "SF Pro Text";
+    --largerFontSize: 2rem; 
+    --largeFontSize: 1.125rem;
+    --mediumFontSize: 1rem;
+    --regularFontSize: 0.9375rem; 
+    --smallFontSize: 0.875rem; 
+    --smallerFontSize: 0.75rem;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+}
+
+body {
+    background: var(--bgColor);
+}
+
+/* COMPONENTS */
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    gap: 0.625rem;
+    padding: 0.75rem;
+    box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.05);
+    border-radius: 0.25rem;
+    color: var(--cardColor);
+    background: var(--cardbgColor);
+}
+
+.flexrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.spec {
+    --statusColor: #FFFFFF;
+    --statusBgColor: rgba(0, 0, 0, 0.25);
+    --femaleColor: #D0004B;
+    --femaleBgColor: #FFEAEB;
+    --maleColor: #0065C2;
+    --maleBgColor: #E7F0FF;
+    --cityColor: #089C67;
+    --cityBgColor: #E8FBED;
+    --workColor: #4B6A87;
+    --workBgColor: #F4F4F4;
+
+    font-size: var(--smallFontSize);
+    padding: 0.125rem 0.5625rem;
+    border-radius: 0.1875rem;
+    line-height: 1.0625rem;
+}
+
+.specStatus {
+    z-index: 1;
+    color: var(--statusColor);
+    background: var(--statusBgColor);
+}
+
+.specFemale {
+    color: var(--femaleColor);
+    background: var(--femaleBgColor);
+}
+
+.specCity {
+    color: var(--cityColor);
+    background: var(--cityBgColor);
+}
+
+.specWork {
+    color: var(--workColor);
+    background: var(--workBgColor);
+}
+
+.largeText {
+    font-size: var(--largeFontSize);
+    font-weight: 500;
+}
+
+.regularText { /*font size 15px line height 21px*/
+    font-size: var(--regularFontSize);
+    line-height: 1.3125rem;
+    margin: 0 0.1875rem;
+}
+
+/* Header */
+header {
+    color: var(--headerColor);
+    background: var(--cardbgColor);
+}
+
+#photoDecoration1 {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12.25rem;
+    background: rgba(255, 255, 255, 0.2);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(2px);
+    clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
+    transform:scaleZ(1); /* fix white line clip path bug */
+    
+}
+#photoDecoration2 {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8.9375rem;
+    background: rgba(255, 255, 255, 0.4);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(2px);
+    clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
+    transform:scaleZ(1); /* fix white line clip path bug */
+    
+}
+#photoDecoration3 {
+    z-index: 4;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7.625rem;
+    background: rgba(255, 255, 255, 0.6);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(2px);
+    clip-path: polygon(0 0, 100% 110%, 100% 100%, 0 100%);
+    transform:scaleZ(1); /* fix white line clip path bug */
+    
+}
+
+#profile {
+    position: relative; /* to activate zindex */
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    background: var(--cardbgColor);
+    padding: 7.125rem 2.9586vw 1.5625rem calc(2.9586vw - 1px);
+    margin-top: -6.5rem;
+    clip-path: polygon(0 25.12%, 100% 0%, 100% 100%, 0% 100%);
+    transform:scaleZ(1); /* fix white line clip path bug */
+}
+
+
+header figure {
+    /* decoration are placed relative to */
+    position: relative;
+}
+
+header img {
+    z-index: 1;
+    display: block; /* make container perfect fit */
+    position: relative; /* to make zindex work */
+    width: 100%;
+    height: 56.616vh;
+    object-fit: cover;
+    object-position: top;
+    padding-right: 0.5px; /* fix rendering bug */
+}
+
+header figcaption {
+    position: absolute;
+    top: 1.9375rem;
+    left: 2.0625rem;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+#profileSpecs {
+    gap: 0.5rem;
+}
+
+#profile p {
+    margin: 0;
+    white-space: pre-line;
+    min-width: 17rem;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+}
+
+h2 {
+    color: var(--headingsColor);
+    font-size: var(--smallerFontSize);
+    font-weight: 400;
+    line-height: 1.3125rem;
+    text-transform: uppercase;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+input, label {
+    /* checkboxes are not meant to be turned on/off in this context */
+    pointer-events:none;
+}
+
+/* Personality */
+#personality figure {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 0 0.625rem;
+}
+
+#personality img {
+    grid-row: 1 / 3;
+    width: 3.9448vmax;
+    height: 3.9448vmax;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+#personality abbr {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: var(--smallerFontSize);
+    color: var(--abbrColor);
+    font-weight: 300;
+}
+#personality figcaption {
+    line-height: 1.3425rem;
+}
+
+/* Education */
+#education ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+#education li {
+    line-height: 1.3125rem;
+}
+
+#education p {
+    font-size: var(--smallerFontSize);
+    color: var(--lightColor);
+    line-height: 1rem;
+    margin-left: 17px;
+    margin-right: 4px;
+}
+
+/* Work Life */
+
+/* Hobbies */
+#hobbies ul {
+    gap: 0;
+}
+
+#hobbies li:not(:last-child)::after {
+    content: '\00a0•\00a0';
+}
+
+/* Digital Communities */
+#digitalCommunities {
+    gap: 0.5rem;
+    padding: 0.5625rem 0.75rem; /*pixel perfect adjustments */
+}
+
+#digitalCommunities ul {
+    /* fix li being bigger than content */
+    line-height: 0; 
+}
+
+#digitalCommunities img {
+    width: clamp(52px,4vmax,90px);
+    height: clamp(52px,4vmax,90px);
+}
+
+/* Digital Media */
+
+/* Goals */
+
+/* Frustrations */
+
+/* -------------------------------------------------------- */
+
+/* Media Queries */
+@media screen and (max-width:290px) { /* galaxy fold adjustment */
+    #profile p {
+        min-width: 15rem;
+    }
+}
+
+@media screen and (min-width:700px) {
+    body {
+        display: flex;
+    }
+    header {
+        position: fixed;
+        width: 40vw;
+        min-height: 100vh;
+    }
+    main {
+        width: 60%;
+        margin-left: auto;
+        padding: 1rem;
+    }
+    header img {
+        padding-right: 2px;
+    }
+}
+
+@media screen and (min-width:700px)
+and (orientation:portrait) {
+    main {
+        flex-wrap: nowrap;
+    }
+    .card {
+        width: auto;
+    }
+}
+
+@media screen and (min-width:980px)
+and (orientation:landscape) {
+    html {
+        font-size: clamp(16px, 1.5vmax, 20px); 
+        /* Responsive text for larger screen sizes */
+    }
+
+    header {
+        width: 33.058%;
+    }
+
+    header img {
+        padding-right: 0.5px;
+    }
+
+    main {
+        width: 62%; /* not 66% because of paddings */
+        flex-wrap: wrap;
+        width: calc(100% - 33.058%);
+        height: 41rem;
+        gap: 2.3076vh 1.1875rem;
+        padding: 3.0572vmax 2.95857vmax 0 1.9723vmax;
+    }
+
+    .card {
+        width: 48.506%;
+    }
+}
+
+@media screen and (min-height:1200px)
+and (orientation:landscape) {
+    main {
+        flex-wrap: nowrap;
+    }
+    .card {
+        width: auto;
+    }
+}
