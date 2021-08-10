@@ -119,40 +119,12 @@ if($row['worklife2'] != '')
             <ul class="flexrow largeText ">
 <?php
 
-// for ($x = 1; $x <= 5; $x++) {
-//     if(('$hobbie'.$x) != ''){
-//         echo "<li>".$row['hobbie'.$x]."</li>";
-//     }
-// } créer une <li> même si le contenu est vide ???????
-
-if($row['hobbie1'] != '')
-{
-    echo "<li>".$row['hobbie1']."</li>";
-}?>
-
-<?php
-if($row['hobbie2'] != '')
-{
-    echo "<li>".$row['hobbie2']."</li>";
-}?>
-<?php
-
-if($row['hobbie3'] != '')
-{
-    echo "<li>".$row['hobbie3']."</li>";
-}?>
-<?php
-
-if($row['hobbie4'] != '')
-{
-    echo "<li>".$row['hobbie4']."</li>";
-}?>
-<?php
-
-if($row['hobbie5'] != '')
-{
-    echo "<li>".$row['hobbie5']."</li>";
-}?>
+for ($x = 1; $x <= 5; $x++) {
+    if(($row['hobbie'.$x]) != ''){
+        echo "<li>".$row['hobbie'.$x]."</li>";
+    }
+} 
+?>
             </ul>
         </section>
 

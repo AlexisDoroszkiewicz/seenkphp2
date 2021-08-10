@@ -38,6 +38,7 @@
             <select name="image" id="image">
                 <option value="images/female-student.png">female student</option>
                 <option value="images/male-alumni.png">male alumni</option>
+                <option value="images/alexis.jpg">alexis</option>
             </select><br>
             </label>
             <label for="">Description :<br>
