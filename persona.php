@@ -100,8 +100,16 @@ if($row['highschoolbox'] == '1')
         <section id="workLife" class="card">
             <h2>💼 work life</h2>
             <ul class="flexrow">
-                <li class="spec specWork"><?php echo $row['worklife1']; ?></li>
-                <li class="spec specWork"><?php echo $row['worklife2']; ?></li>
+<?php
+if($row['worklife1'] != '')
+{
+    echo "<li class='spec specWork'>".$row['worklife1']."</li>";
+}?>
+<?php
+if($row['worklife2'] != '')
+{
+    echo "<li class='spec specWork'>".$row['worklife2']."</li>";
+}?>
             </ul>
             <p class="regularText"><?php echo $row['worklife3']; ?></p>
         </section>
