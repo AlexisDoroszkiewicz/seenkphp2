@@ -362,7 +362,7 @@ and (orientation:portrait) {
 @media screen and (min-width:980px)
 and (orientation:landscape) {
     html {
-        font-size: clamp(16px, 1.5vmax, 20px); 
+        font-size: clamp(16px, 1.1vmax, 20px); 
         /* Responsive text for larger screen sizes */
     }
 
