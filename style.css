@@ -95,6 +95,11 @@ body {
     background: var(--femaleBgColor);
 }
 
+.specMale {
+    color: var(--maleColor);
+    background: var(--maleBgColor);
+}
+
 .specCity {
     color: var(--cityColor);
     background: var(--cityBgColor);

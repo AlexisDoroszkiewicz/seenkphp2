@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,25 @@
     <link rel="stylesheet" href="./indexstyle.css">
     <title>Persona Form</title>
 </head>
+
 <body>
-<h1>PERSONA BUILDER</h1>
+    <h1>PERSONA BUILDER</h1>
     <form action="persona.php" method="POST">
-    
+
         <fieldset>
             <legend>Profile informations</legend>
-                <label for="status">Status :
-                    <select name="status" id="status">
-                        <option value="Current Student">Current Student</option>
-                        <option value="Alumni">Alumni</option>
-                    </select><br>
-                </label> 
-                <label for="name">Name * :
-                    <input type="text" name="name" required><br>
-                </label>
-                <label for="age">Age * :
-                    <input type="text" name="age" required><br>
-                </label>     
+            <label for="status">Status :
+                <select name="status" id="status">
+                    <option value="Current Student">Current Student</option>
+                    <option value="Alumni">Alumni</option>
+                </select><br>
+            </label>
+            <label for="name">Name * :
+                <input type="text" name="name" required><br>
+            </label>
+            <label for="age">Age * :
+                <input type="text" name="age" required><br>
+            </label>
             <label for="gender">Gender :
                 <select name="gender" id="gender">
                     <option value="Male">male</option>
@@ -34,12 +36,12 @@
             <label for="">City * :
                 <input type="text" name="city" required><br>
             </label>
-            <label for="image">Image : 
-            <select name="image" id="image">
-                <option value="images/female-student.png">female student</option>
-                <option value="images/male-alumni.png">male alumni</option>
-                <option value="images/alexis.jpg">alexis</option>
-            </select><br>
+            <label for="image">Image :
+                <select name="image" id="image">
+                    <option value="images/female-student.png">female student</option>
+                    <option value="images/male-alumni.png">male alumni</option>
+                    <option value="images/alexis.jpg">alexis</option>
+                </select><br>
             </label>
             <label for="">Description :<br>
                 <textarea name="description" id="description" cols="30" rows="4"></textarea><br>
@@ -81,36 +83,36 @@
                     <input type="checkbox" id="graduate" name="graduatebox" value="1">
                     <label for="graduate">Graduate</label><br>
                     <textarea name="graduate" cols="30" rows="4"></textarea><br>
-                 </li>
+                </li>
                 <li>
                     <input type="checkbox" id="undergraduate" name="undergraduatebox" value="1">
                     <label for="undergraduate">Undergraduate</label><br>
                     <textarea name="undergraduate" id="undergraduate" cols="30" rows="4"></textarea><br>
-                 </li>
+                </li>
                 <li>
                     <input type="checkbox" id="highschool" name="highschoolbox" value="1">
                     <label for="highschool">High School</label><br>
                     <textarea name="highschool" id="highschool" cols="30" rows="4"></textarea><br>
-                 </li>
+                </li>
             </ul>
         </fieldset>
 
         <fieldset>
             <legend>Work Life</legend>
-                <div class="flex">
-                    <select name="worklife1" id="worklife1">
-                        <option></option>
-                        <option value="Entrepreneur">Entrepreneur</option>
-                        <option value="Employed">Employed</option>
-                        <option value="Freelances">Freelances</option>
-                    </select>
-                    <select name="worklife2" id="worklife2">
-                        <option></option>
-                        <option value="Entrepreneur">Entrepreneur</option>
-                        <option value="Employed">Employed</option>
-                        <option value="Freelances">Freelances</option>
-                    </select>
-                </div>
+            <div class="flex">
+                <select name="worklife1" id="worklife1">
+                    <option></option>
+                    <option value="Entrepreneur">Entrepreneur</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Freelances">Freelances</option>
+                </select>
+                <select name="worklife2" id="worklife2">
+                    <option></option>
+                    <option value="Entrepreneur">Entrepreneur</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Freelances">Freelances</option>
+                </select>
+            </div>
             <textarea name="worklife3" id="worklife" cols="30" rows="4"></textarea><br>
         </fieldset>
 
@@ -129,44 +131,44 @@
             <legend>Digital Communities</legend>
             <select name="digcom1">
                 <option></option>
-                    <option value="icons/instagram.png">Instagram</option>
-                    <option value="icons/spotify.png">Spotify</option>
-                    <option value="icons/messenger.png">Messenger</option>
-                    <option value="icons/github.png">Github</option>
-                    <option value="icons/slack.png">Slack</option>
-                    <option value="icons/youtube.png">Youtube</option>
-                    <option value="icons/whatsapp.png">Whatsapp</option>
-                </select>
+                <option value="icons/instagram.png">Instagram</option>
+                <option value="icons/spotify.png">Spotify</option>
+                <option value="icons/messenger.png">Messenger</option>
+                <option value="icons/github.png">Github</option>
+                <option value="icons/slack.png">Slack</option>
+                <option value="icons/youtube.png">Youtube</option>
+                <option value="icons/whatsapp.png">Whatsapp</option>
+            </select>
             <select name="digcom2">
-            <option></option>
-                    <option value="icons/instagram.png">Instagram</option>
-                    <option value="icons/spotify.png">Spotify</option>
-                    <option value="icons/messenger.png">Messenger</option>
-                    <option value="icons/github.png">Github</option>
-                    <option value="icons/slack.png">Slack</option>
-                    <option value="icons/youtube.png">Youtube</option>
-                    <option value="icons/whatsapp.png">Whatsapp</option>
-                </select>
+                <option></option>
+                <option value="icons/instagram.png">Instagram</option>
+                <option value="icons/spotify.png">Spotify</option>
+                <option value="icons/messenger.png">Messenger</option>
+                <option value="icons/github.png">Github</option>
+                <option value="icons/slack.png">Slack</option>
+                <option value="icons/youtube.png">Youtube</option>
+                <option value="icons/whatsapp.png">Whatsapp</option>
+            </select>
             <select name="digcom3">
-            <option value=""></option>
-                    <option value="icons/instagram.png">Instagram</option>
-                    <option value="icons/spotify.png">Spotify</option>
-                    <option value="icons/messenger.png">Messenger</option>
-                    <option value="icons/github.png">Github</option>
-                    <option value="icons/slack.png">Slack</option>
-                    <option value="icons/youtube.png">Youtube</option>
-                    <option value="icons/whatsapp.png">Whatsapp</option>
-                </select>
+                <option value=""></option>
+                <option value="icons/instagram.png">Instagram</option>
+                <option value="icons/spotify.png">Spotify</option>
+                <option value="icons/messenger.png">Messenger</option>
+                <option value="icons/github.png">Github</option>
+                <option value="icons/slack.png">Slack</option>
+                <option value="icons/youtube.png">Youtube</option>
+                <option value="icons/whatsapp.png">Whatsapp</option>
+            </select>
             <select name="digcom4">
-            <option value=""></option>
-                    <option value="icons/instagram.png">Instagram</option>
-                    <option value="icons/spotify.png">Spotify</option>
-                    <option value="icons/messenger.png">Messenger</option>
-                    <option value="icons/github.png">Github</option>
-                    <option value="icons/slack.png">Slack</option>
-                    <option value="icons/youtube.png">Youtube</option>
-                    <option value="icons/whatsapp.png">Whatsapp</option>
-                </select>
+                <option value=""></option>
+                <option value="icons/instagram.png">Instagram</option>
+                <option value="icons/spotify.png">Spotify</option>
+                <option value="icons/messenger.png">Messenger</option>
+                <option value="icons/github.png">Github</option>
+                <option value="icons/slack.png">Slack</option>
+                <option value="icons/youtube.png">Youtube</option>
+                <option value="icons/whatsapp.png">Whatsapp</option>
+            </select>
         </fieldset>
 
         <fieldset>
@@ -195,4 +197,5 @@
     </form>
 
 </body>
+
 </html>
